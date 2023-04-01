@@ -1,0 +1,28 @@
+<ion-content>
+  <div class="container">
+    <div class="bloc_logo d-f-c">
+      <div class="logo">
+
+      </div>
+    </div>
+    <div class="bloc_form">
+      <form action="">
+        <div class="d-g">
+          <input type="text" placeholder="Username or Email" />
+        </div>
+        <div class="d-g">
+          <input type="Password" placeholder="Password" />
+        </div>
+        <div class="button d-f-c">
+          <ion-button expand="block" shape="round" (click)="goHome()">
+            SIGN IN
+          </ion-button>
+        </div>
+      </form>
+      <div class="bloc_text">
+        <a (click)="forgotPassword()">Forgot Password ?</a>
+        <p>New to Bank Apps ? <span><a (click)="signup()">Sign Up</a></span></p>
+      </div>
+    </div>
+  </div>
+</ion-content>

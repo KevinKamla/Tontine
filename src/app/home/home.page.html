@@ -1,20 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-no-border">
+  <div class="container">
+      <div class="header_modal">
+          <ion-buttons slot="start">
+              <ion-menu-button name="ellipsis-horizontal-outline"></ion-menu-button>
+          </ion-buttons>
+          <ion-title class="ion-text-center">
+              Tontine
+          </ion-title>
+          <ion-buttons slot="end">
+              <ion-button>
+                  <ion-icon name="mail"></ion-icon>
+              </ion-button>
+          </ion-buttons>
+      </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <div class="bloc_card d-f-c">
+          <ion-card>
+              <ion-row>
+                  <ion-col size=""> <ion-icon name="person"></ion-icon> </ion-col>
+                  <ion-col size="">
+                      <h4 class="ion-no-margin">KARINA BUYS</h4>
+                      <h6>BALANCE</h6>
+                      <h3 class="ion-no-margin">53,100FCFA</h3>
+                  </ion-col>
+              </ion-row>
+          </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      </div>
+
+      <div class="bloc_card_button d-f-c">
+          <ion-card>
+              <ion-row>
+                  <ion-col size=""><div class="bloc_icon d-f-c"  [routerLink]="['../transaction']"><ion-icon name="person"></ion-icon></div>Transaction</ion-col>
+                  <ion-col size=""><div class="bloc_icon d-f-c" ><ion-icon name="person"></ion-icon></div>Paiement</ion-col>
+                  <ion-col size=""><div class="bloc_icon d-f-c"  [routerLink]="['../myaccount']"><ion-icon name="person"></ion-icon></div>Account</ion-col>
+                  <ion-col size=""><div class="bloc_icon d-f-c" [routerLink]="['../investment']" ><ion-icon name="person"></ion-icon></div>investment</ion-col>
+                  <ion-col size=""><div class="bloc_icon d-f-c"><ion-icon name="person"></ion-icon></div>Bonus</ion-col>
+                  <ion-col size=""><div class="bloc_icon d-f-c"><ion-icon name="person"></ion-icon></div>QR note</ion-col>
+                  <ion-col size=""><div class="bloc_icon d-f-c"><ion-icon name="person"></ion-icon></div>notes</ion-col>
+                  <ion-col size=""><div class="bloc_icon d-f-c"><ion-icon name="person"></ion-icon></div>Securité</ion-col>
+                  <ion-col size=""><div class="bloc_icon d-f-c"><ion-icon name="person"></ion-icon></div>Address</ion-col>
+              </ion-row>
+          </ion-card>
+
+      </div>
+
+
   </div>
 </ion-content>

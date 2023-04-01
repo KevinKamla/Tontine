@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="container">
+    <div class="card d-f-c">
+      <form action="">
+        <h4>Sign up your bank account</h4>
+        <div class="d-g">
+          <input type="text" placeholder="Your name" />
+        </div>
+        <div class="d-g">
+          <input type="number" placeholder="Mobile phone number" />
+        </div>
+        <div class="d-g">
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="d-g">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="sms_error">
+          <p>Use 6 characters whit a mix of numbers and letters</p>
+        </div>
+        <ion-item class="item-checkbox">
+          <ion-checkbox slot="start" color=""></ion-checkbox>
+          <ion-label>
+            <p> By signing up, you agree to</p>
+            <p> Bank's Term of Use & Privacy Policy</p>
+          </ion-label>
+        </ion-item>
+        <div class="button d-f-c">
+          <ion-button class="btn_signup" expand="block" shape="round" (click)="goHome()">
+            SIGN UP
+          </ion-button> or
+          <ion-button class="btn_cancel" expand="block" shape="round" fill="clear">
+            CANCEL
+          </ion-button>
+        </div>
+        <div class="bloc_text">
+          <p>Already signed up? <span><a (click)="signin()">Sign in</a></span></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>

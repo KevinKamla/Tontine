@@ -1,0 +1,65 @@
+<ion-content class="ion-no-border">
+  <div class="container">
+      <div class="header_modal">
+          <ion-buttons slot="start">
+              <ion-menu-button name="ellipsis-horizontal-outline"></ion-menu-button>
+          </ion-buttons>
+          <ion-title class="ion-text-center">
+              Tontine
+          </ion-title>
+          <ion-buttons slot="end">
+              <ion-button>
+                  <ion-icon name="mail"></ion-icon>
+              </ion-button>
+          </ion-buttons>
+      </div>
+
+      <div class="bloc_card d-f-c">
+          <ion-card>
+             <ion-card-header>
+                <ion-card-subtitle class="ion-text-center">SENDING MONEY</ion-card-subtitle>
+             </ion-card-header>
+             <ion-card-content>
+                <h1 class="ion-text-center">4180FCFA</h1>
+             </ion-card-content>
+             <p class="ion-text-center">TO <span>LOREN BANK ACCOUNT</span></p>
+          </ion-card>
+
+      </div>
+
+      <div class="bloc_card_button d-f-c">
+          <ion-card>
+            <ion-card-header>
+                <ion-card-title class="ion-text-center">Please enter mount</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-input type="number" placeholder="" value={{value_input}}></ion-input>
+                <div class="bloc_number">
+                    <div class="line1 d-f-s-b">
+                        <span (click)="digit1()" >1</span>
+                        <span (click)="digit2()" >2</span>
+                        <span (click)="digit3()" >3</span>
+                    </div>
+                    <div class="line2 d-f-s-b">
+                        <span (click)="digit4()" >4</span>
+                        <span (click)="digit5()" >5</span>
+                        <span (click)="digit6()" >6</span>
+                    </div>
+                    <div class="line3 d-f-s-b">
+                        <span (click)="digit7()" >7</span>
+                        <span (click)="digit8()" >8</span>
+                        <span (click)="digit9()" >9</span>
+                    </div>
+                    <div class="line4 d-f-s-b">
+                        <span (click)="digit0()" >0</span>
+                        <span (click)="digit_sup()"><ion-icon slot="start" name="add"></ion-icon></span>
+                    </div>
+                </div>
+            </ion-card-content>
+          </ion-card>
+
+      </div>
+
+
+  </div>
+</ion-content>

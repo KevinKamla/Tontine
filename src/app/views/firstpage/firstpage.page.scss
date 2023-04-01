@@ -1,0 +1,62 @@
+.d-f-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-f-e {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.d-f-s-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-g {
+    display: grid;
+}
+
+ion-content {
+    --background: linear-gradient(35deg, #0090bf 31%, #01d0fa 79%);
+
+
+    .container {
+        height: 100%;
+        width: 100%;
+
+        .bloc_firstpage {
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            .bloc_logo {
+                height: 50%;
+                width: 100%;
+
+                .logo {
+                    height: 50%;
+                    width: 65%;
+                    background: white;
+                }
+            }
+
+            .bloc_form {
+                justify-content: space-between;
+                margin: 300px 20px;
+
+                p {
+                    color: white;
+                }
+
+                h4 {
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

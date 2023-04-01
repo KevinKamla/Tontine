@@ -1,0 +1,106 @@
+.d-f-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-f-e {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.d-f-s-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-g {
+    display: grid;
+}
+
+ion-content {
+    --background: linear-gradient(35deg, #0090bf 31%, #01d0fa 79%);
+
+    .container {
+        height: 90%;
+
+        .card {
+            height: 100%;
+
+            form {
+                background: white;
+                margin-top: 30px;
+                border-radius: 20px;
+                padding: 20px;
+                width: 80%;
+
+                h4 {
+                    font-weight: 600;
+                    color: #818181;
+                }
+
+                input {
+                    border-radius: 7px;
+                    border: 1px solid #069cc5;
+                    height: 40px;
+                    padding: 6px;
+                    margin-bottom: 10px;
+                    background: white;
+                    color: #069cc5;
+                }
+
+                input::placeholder {
+                    color: #069cc5;
+                }
+
+                .sms_error {
+                    p {
+                        font-size: 14px;
+                        padding-inline: 18px;
+                        color: red;
+                        margin: 2px;
+                    }
+                }
+
+                .item-checkbox {
+                    --border-color: white;
+                    --background: white;
+                }
+
+                .button {
+                    justify-content: space-evenly;
+                    gap: 5px;
+                    margin-top: 11px;
+
+                    ion-button {
+                        height: 35px;
+                    }
+
+                    .btn_signup {
+                        --background: #f64f33;
+                        color: #fff;
+                    }
+
+                    .btn_cancel {
+                        border: 1px solid #00a6dd;
+                        border-radius: 20px;
+                        color: #00a6dd;
+
+                    }
+                }
+
+                .bloc_text {
+
+                    p {
+                        text-align: center;
+                        color: #797979
+                    }
+                }
+            }
+        }
+
+
+    }
+}

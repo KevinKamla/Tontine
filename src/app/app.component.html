@@ -1,3 +1,32 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <ion-split-pane contentId="menu_tontine">
+      <ion-menu contentId="menu_tontine" menuId="pearl_sale" class="bg_side" type="overlay">
+          <ion-content color="netfly-dark">
+              <ion-menu-toggle autoHide="false">
+                  <ion-item [routerLink]="['']" color="">
+                      <ion-label> Account </ion-label>
+                  </ion-item>
+              </ion-menu-toggle>
+
+
+              <ion-menu-toggle autoHide="false">
+                  <ion-item [routerLink]="['']" color="">
+                      <ion-label>Help</ion-label>
+                  </ion-item>
+              </ion-menu-toggle>
+
+              <ion-menu-toggle autoHide="false">
+                  <ion-item [routerLink]="['']" color="">
+                      <ion-label> About </ion-label>
+                  </ion-item>
+              </ion-menu-toggle>
+
+          </ion-content>
+      </ion-menu>
+
+      <ion-router-outlet id="menu_tontine">
+
+      </ion-router-outlet>
+  </ion-split-pane>
 </ion-app>
